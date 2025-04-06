@@ -1,3 +1,9 @@
+---
+noteId: "fbe961b0132111f09f39eb09bd5c5ca7"
+tags: []
+
+---
+
 ### 📌 **Employee Management System**
 A GraphQL-based backend application for managing employees, built using **Node.js**, **Express**, **GraphQL**, **MongoDB**, and **Apollo Server**.
 
