@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # MongoDB service
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=employee_db
+    networks:
+      - app-network
+
+  # Backend service
+  backend:
+    build:
+      context: ../employee-management-system
+      dockerfile: Dockerfile
+    container_name: backend
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/employee_db
+      - JWT_SECRET=your_jwt_secret
+      - PORT=8081
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+    volumes:
+      - ../employee-management-system:/app
+      - /app/node_modules
+      - uploads_data:/app/uploads
+
+  # Frontend service
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
+    restart: always
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+  uploads_data:

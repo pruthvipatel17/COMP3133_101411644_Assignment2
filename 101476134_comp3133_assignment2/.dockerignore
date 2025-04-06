@@ -1,0 +1,55 @@
+# Node.js dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist
+tmp
+out-tsc
+
+# Environment files
+.env
+.env.*
+
+# Git and version control
+.git
+.gitignore
+.github
+
+# Editor files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Testing
+/coverage
+/e2e/*.js
+/e2e/*.map
+
+# Documentation
+/docs
+README.md
+CHANGELOG.md
+LICENSE
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Other
+*.log
+*.swp
+*.bak
