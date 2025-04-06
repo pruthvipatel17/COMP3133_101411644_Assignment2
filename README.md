@@ -241,22 +241,22 @@ README.md            # Project documentation
 ## 📸 **Application Screenshots**
 
 ### Login Screen
-![Login Screen](../comp3133_101476134_assignment1/employee-management-system/uploads/login.png)
+![Login Screen](employee-management-system/uploads/login.png)
 
 ### Registration Screen
-![Registration Screen](../comp3133_101476134_assignment1/employee-management-system/uploads/register.png)
+![Registration Screen](employee-management-system/uploads/register.png)
 
 ### Employee List/Information
-![Employee Information](../comp3133_101476134_assignment1/employee-management-system/uploads/emplyee%20information.png)
+![Employee Information](employee-management-system/uploads/emplyee%20information.png)
 
 ### Add Employee Form
-![Add Employee](../comp3133_101476134_assignment1/employee-management-system/uploads/add%20employee.png)
+![Add Employee](employee-management-system/uploads/add%20employee.png)
 
 ### Employee Details
-![Employee Details](../comp3133_101476134_assignment1/employee-management-system/uploads/employee%20details.png)
+![Employee Details](employee-management-system/uploads/employee%20details.png)
 
 ### Delete Employee Confirmation
-![Delete Employee](../comp3133_101476134_assignment1/employee-management-system/uploads/delete%20employee.png)
+![Delete Employee](employee-management-system/uploads/delete%20employee.png)
 
 ## 👨 **Author**
 **Utsav Changani**  
