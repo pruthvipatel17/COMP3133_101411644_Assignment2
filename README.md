@@ -1,8 +1,3 @@
----
-noteId: "fbe961b0132111f09f39eb09bd5c5ca7"
-tags: []
-
----
 
 ### 📌 **Employee Management System**
 A GraphQL-based backend application for managing employees, built using **Node.js**, **Express**, **GraphQL**, **MongoDB**, and **Apollo Server**.
@@ -41,7 +36,7 @@ The **Employee Management System** provides a GraphQL API for managing employee 
 ## 🛠 **Setup Instructions**
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/utsav-1730/COMP3133_101476134_Assignment1.git
+git clone https://github.com/utsav-1730/101476134_comp3133_assignment2.git
 cd COMP3133_101476134_Assignment1
 checkout main
 ```
@@ -230,7 +225,7 @@ README.md            # Project documentation
 ---
 
 ## 👉 **GitHub Repository**
-[GitHub Link](https://github.com/utsav-1730/COMP3133_101476134_Assignment1.git)
+[GitHub Link](https://github.com/utsav-1730/101476134_comp3133_assignment2.git)
 
 ---
 
@@ -246,22 +241,22 @@ README.md            # Project documentation
 ## 📸 **Application Screenshots**
 
 ### Login Screen
-![Login Screen](./uploads/login.png)
+![Login Screen](../comp3133_101476134_assignment1/employee-management-system/uploads/login.png)
 
 ### Registration Screen
-![Registration Screen](./uploads/register.png)
+![Registration Screen](../comp3133_101476134_assignment1/employee-management-system/uploads/register.png)
 
 ### Employee List/Information
-![Employee Information](./uploads/emplyee%20information.png)
+![Employee Information](../comp3133_101476134_assignment1/employee-management-system/uploads/emplyee%20information.png)
 
 ### Add Employee Form
-![Add Employee](./uploads/add%20employee.png)
+![Add Employee](../comp3133_101476134_assignment1/employee-management-system/uploads/add%20employee.png)
 
 ### Employee Details
-![Employee Details](./uploads/employee%20details.png)
+![Employee Details](../comp3133_101476134_assignment1/employee-management-system/uploads/employee%20details.png)
 
 ### Delete Employee Confirmation
-![Delete Employee](./uploads/delete%20employee.png)
+![Delete Employee](../comp3133_101476134_assignment1/employee-management-system/uploads/delete%20employee.png)
 
 ## 👨 **Author**
 **Utsav Changani**  
