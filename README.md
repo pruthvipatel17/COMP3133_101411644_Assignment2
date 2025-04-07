@@ -238,25 +238,6 @@ README.md            # Project documentation
 }
 ```
 
-## 📸 **Application Screenshots**
-
-### Login Screen
-![Login Screen](employee-management-system/uploads/login.png)
-
-### Registration Screen
-![Registration Screen](employee-management-system/uploads/register.png)
-
-### Employee List/Information
-![Employee Information](employee-management-system/uploads/emplyee%20information.png)
-
-### Add Employee Form
-![Add Employee](employee-management-system/uploads/add%20employee.png)
-
-### Employee Details
-![Employee Details](employee-management-system/uploads/employee%20details.png)
-
-### Delete Employee Confirmation
-![Delete Employee](employee-management-system/uploads/delete%20employee.png)
 
 ## 👨 **Author**
 **Pruthvi Patel - 101411644**  
