@@ -1,0 +1,128 @@
+<div class="employee-list-container">
+  <div class="page-header">
+    <div class="page-title">
+      <h1><i class="fas fa-users"></i> Employee Directory</h1>
+      <p class="page-subtitle">Manage your organization's workforce</p>
+    </div>
+    <div class="page-actions">
+      <button class="btn btn-primary" (click)="addEmployee()">
+        <i class="fas fa-user-plus"></i> Add Employee
+      </button>
+    </div>
+  </div>
+
+  <div class="alert alert-danger" *ngIf="errorMessage">
+    <i class="fas fa-exclamation-circle"></i> {{ errorMessage }}
+  </div>
+
+  <div class="card search-card mb-4">
+    <div class="card-body">
+      <h3 class="search-title"><i class="fas fa-search"></i> Search Employees</h3>
+      <form #search="ngForm" (ngSubmit)="filterEmployees(search)" class="search-form">
+        <div class="search-row">
+          <div class="search-input-group">
+            <label for="search-string" class="form-label">Search Term</label>
+            <input
+              type="text"
+              id="search-string"
+              name="search-string"
+              placeholder="Enter search term..."
+              ngModel
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="search-select-group">
+            <label for="search-type" class="form-label">Filter By</label>
+            <select id="search-type" name="search-type" ngModel class="form-control" required>
+              <option value="">Select filter type</option>
+              <option value="department">Department</option>
+              <option value="designation">Designation</option>
+            </select>
+          </div>
+          <div class="search-buttons">
+            <button type="submit" class="btn btn-primary" [disabled]="search.invalid">
+              <i class="fas fa-search"></i> Search
+            </button>
+            <button type="button" class="btn btn-outline-primary" (click)="clearSearch()">
+              <i class="fas fa-times"></i> Clear
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="loading-container" *ngIf="loading">
+    <div class="loading-content">
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+      <p>Loading employees...</p>
+    </div>
+  </div>
+
+  <div class="card table-card" *ngIf="!loading && employees.length > 0">
+    <div class="card-body p-0">
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Employee</th>
+              <th>Email</th>
+              <th>Department</th>
+              <th>Designation</th>
+              <th>Salary</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employees">
+              <td>
+                <div class="employee-info">
+                  <div class="avatar avatar-md">
+                    <img [src]="employee.employee_photo || 'https://via.placeholder.com/40'" alt="Employee Photo">
+                  </div>
+                  <div class="employee-name">
+                    {{ employee.first_name }} {{ employee.last_name }}
+                  </div>
+                </div>
+              </td>
+              <td>{{ employee.email }}</td>
+              <td>
+                <span class="badge badge-primary">{{ employee.department }}</span>
+              </td>
+              <td>
+                <span class="badge badge-secondary">{{ employee.designation }}</span>
+              </td>
+              <td>
+                <span class="salary-amount">${{ employee.salary }}</span>
+              </td>
+              <td class="actions">
+                <button class="btn btn-sm btn-info mr-2" (click)="viewEmployee(employee.id)" title="View Details">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn btn-sm btn-danger" (click)="deleteEmployee(employee.id)" title="Delete">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-state" *ngIf="!loading && employees.length === 0">
+    <div class="empty-state-content">
+      <div class="empty-state-icon">
+        <i class="fas fa-users-slash"></i>
+      </div>
+      <h2 class="empty-state-title">No employees found</h2>
+      <p class="empty-state-description">
+        There are no employees matching your criteria. Try clearing your search or add a new employee.
+      </p>
+      <button class="btn btn-primary mt-4" (click)="addEmployee()">
+        <i class="fas fa-user-plus"></i> Add Employee
+      </button>
+    </div>
+  </div>
+</div>

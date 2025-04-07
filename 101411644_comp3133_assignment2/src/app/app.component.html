@@ -1,0 +1,43 @@
+<div class="app-container">
+  <header *ngIf="isAuthenticated" class="app-header">
+    <div class="header-content">
+      <h1 class="app-title">
+        <i class="fas fa-building"></i> {{ title }}
+      </h1>
+
+      <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="app-nav" [class.open]="isMobileMenuOpen">
+        <button *ngIf="isMobileMenuOpen" class="mobile-menu-close" (click)="toggleMobileMenu()" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a routerLink="/employees" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()">
+              <i class="fas fa-users"></i> Employees
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/employees/add" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()">
+              <i class="fas fa-user-plus"></i> Add Employee
+            </a>
+          </li>
+          <li class="nav-item">
+            <button (click)="logout()" class="logout-btn">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="menu-overlay" [class.open]="isMobileMenuOpen" (click)="closeMobileMenu()"></div>
+
+  <main class="app-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

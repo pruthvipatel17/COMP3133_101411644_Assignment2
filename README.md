@@ -36,8 +36,8 @@ The **Employee Management System** provides a GraphQL API for managing employee 
 ## 🛠 **Setup Instructions**
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/utsav-1730/101476134_comp3133_assignment2.git
-cd COMP3133_101476134_Assignment1
+git clone https://github.com/pruthvi-patel/101411644_comp3133_assignment2.git
+cd COMP3133_101411644_Assignment1
 checkout main
 ```
 
@@ -50,7 +50,7 @@ npm install
 Create a **.env** file in the project root and add:
 ```env
 PORT=8081
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/comp3133_StudentID_assignment1?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/comp3133_101411644_assignment1?retryWrites=true&w=majority
 JWT_SECRET=your_secret_key
 ```
 
@@ -225,15 +225,15 @@ README.md            # Project documentation
 ---
 
 ## 👉 **GitHub Repository**
-[GitHub Link](https://github.com/utsav-1730/101476134_comp3133_assignment2.git)
+[GitHub Link](https://github.com/pruthvi-patel/101411644_comp3133_assignment2.git)
 
 ---
 
 ## 📄 **Sample User Credentials**
 ```json
 {
-  "username": "Utsav",
-  "email": "utsav@example.com",
+  "username": "Pruthvi",
+  "email": "pruthvi@example.com",
   "password": "Test@123"
 }
 ```
@@ -259,5 +259,5 @@ README.md            # Project documentation
 ![Delete Employee](employee-management-system/uploads/delete%20employee.png)
 
 ## 👨 **Author**
-**Utsav Changani**  
+**Pruthvi Patel - 101411644**  
 **COMP3133 - Full Stack Development II**
