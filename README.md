@@ -36,7 +36,7 @@ The **Employee Management System** provides a GraphQL API for managing employee 
 ## 🛠 **Setup Instructions**
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/pruthvi-patel/101411644_comp3133_assignment2.git
+git clone https://github.com/pruthvipatel17/COMP3133_101411644_Assignment2.git
 cd COMP3133_101411644_Assignment1
 checkout main
 ```
@@ -225,7 +225,7 @@ README.md            # Project documentation
 ---
 
 ## 👉 **GitHub Repository**
-[GitHub Link](https://github.com/pruthvi-patel/101411644_comp3133_assignment2.git)
+[GitHub Link](https://github.com/pruthvipatel17/COMP3133_101411644_Assignment2.git)
 
 ---
 
